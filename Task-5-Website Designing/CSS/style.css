@@ -1,0 +1,411 @@
+
+/*************************************
+ 
+ 	1. MAIN STYLE
+	
+	2. HEADER
+	
+    3. CONTENT
+    	
+	4. FOOTER
+	
+
+ 
+ ************************************/
+
+/*************************************
+
+1. MAIN STYLE
+
+ ************************************/
+
+/*Reset CSS */
+
+* ,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4{
+	font-weight : normal;
+}
+
+footer,
+header,
+section {
+	display: block;
+}
+
+h1, 
+h2, 
+h3,
+h4{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+}
+a{
+    text-decoration:none; 
+    color:inherit; 
+    cursor:pointer;
+}
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+button{
+    background-color:transparent; 
+    color:inherit; 
+    border-width:0; 
+    cursor:pointer;
+    outline: 0;
+    border: 0;
+}
+
+/* padding */
+
+.padding-t15{
+    padding-top: 15px;
+}
+.padding-t40{
+    padding-top: 40px;
+}
+.padding-b40{
+    padding-bottom: 40px;
+}
+.padding-l21{
+    padding-left: 21px;
+}
+
+/* Margin used */
+
+.margin-t14{
+    margin-top: 14px;
+}
+.margin-t16{
+    margin-top: 16px;
+}
+.margin-t48{
+    margin-top: 48px;
+}
+.margin-t64{
+    margin-top: 64px;
+}
+.margin-r20{
+    margin-right: 20px;
+}
+.margin-r48{
+    margin-right: 48px;
+}
+.margin-b4{
+    margin-bottom: 4px;
+}
+.margin-b21{
+    margin-bottom: 21px;
+}
+.margin-b69{
+    margin-bottom: 69px;
+}
+
+/* Button */
+.btn{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-radius: 22px;
+    padding: 12px 29.5px 12px 30.5px;
+}
+.btn-primary{
+    background-color: #2086fb;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+button:focus{
+    outline: 0;
+}
+button:active{
+    outline: 0;
+}
+
+/* Float */
+
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+
+/* Text Align */
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+/* body,html{
+    height: 100%;
+} */
+
+/* HERO */
+
+.hero-section{
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%),url("https://i.ibb.co/mcfBf0m/hero-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 568px;
+    position: relative;
+}
+
+/*************************************
+
+1. HEADER
+
+ ************************************/
+
+
+
+header{
+    width: 100%;
+    height: 68px;
+    overflow: hidden;
+    background-color:rgba(136, 136, 136, 0.5);
+    text-align: center;
+}
+nav{
+    display: inline-block;
+}
+.brand-logo{
+    margin-left: 40px;
+    margin-top: 12px;
+}
+.navbar-list{
+    margin-top: 25px;
+}
+.navbar-list::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar-list li a{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    display: block;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.navbar-list li a:hover{
+    color: black;
+}
+.hero-content{
+    /* margin: auto;
+    margin-top: 10%; */
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+.hero-content h1{
+    color: white;
+}
+.hero-search{
+    margin: 0 auto;
+    width: 65%;
+    height: 64px;
+    background-color: white;
+    border: 6px solid rgba(136, 136, 136, 0.5);
+    position: relative;
+    border-radius: 5px;
+}
+.form-input{
+    border: none;
+    width: 92%;
+    height: 51px;
+    margin: auto;
+}
+input:focus{
+    outline: 0;
+}
+input[type="text"]::placeholder,input[type="text"]{
+    color: #9b9b9b;
+    font-size: 16px;
+}
+.hero-search__search-icon{
+    color: #4a4a4a;
+}
+
+/*************************************
+
+2. CONTENT
+
+ ************************************/
+
+
+.content-section{
+    overflow: hidden;
+    width: 100%;
+    padding: 40px;
+}
+.content-section__content{
+    width: 25%;
+    border-right: 1px solid#dcdcdc;
+    height: 328px;
+    text-align: center;
+}
+.content-section__content h3{
+    margin: 24px auto 10px auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;    
+}
+.content-section__content p{
+    width: 80.5%;
+    height: 78px;
+    margin: 0 auto;
+    font-size: 16px; 
+    color: #858585;
+    line-height: 26px;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+    overflow: hidden;
+}
+.border_bottom{
+    border-bottom: 1px solid#dcdcdc;
+}
+.content-section :nth-child(4n){
+    border-right: none;
+}
+
+/*************************************
+
+2. FOOTER
+
+ ************************************/
+
+
+
+footer{
+    color: white;
+    width: 100%;
+    position: relative;
+    background-color: #323232;
+    border: 1px solid #323232;
+}
+.footer-color_primary{
+    background-color: #323232;
+}
+.footer-color_secondary{
+    background-color: #252525;
+}
+footer section > p{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 28px 0 28px 28px;
+}
+.topNavigator{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    bottom: 58px;
+    right: 44px;
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    text-align: center;
+    padding-top: 1px;
+}
+footer a:hover{
+    background-color: white;
+}
+
+/* Media Query */
+
+/* @media only screen and (min-width:1024px) and (max-width:1253px){
+    .hero-section{
+        height: 420px;
+    }
+
+} */
+
+/* @media only screen and (min-width:2560px){
+    .hero-section{
+        height: 1000px;
+    }
+    .hero-header{
+        margin-top: 14%;
+    }
+    header{
+        height: 100px;
+    }
+    .brand-logo{
+        margin-top: 24px;
+    }
+    .navbar-list a{
+        font-size: 25px;
+    }
+    .btn-small{
+        width: 230px;
+        height: 50px;
+        margin-top: 22px;
+        font-size: 24px;
+    }
+    .hero-content h1{
+        font-size: 50px;
+    }
+    .content-section__content h3{
+        font-size: 26px;
+    }
+    .content-section__content p{
+        font-size: 24px;
+    }
+    .footer-section1 h2{
+        font-size: 50px;
+    } 
+    .footer-section1 p{
+        font-size: 30px;
+    } 
+    .footer-section2 p{
+        font-size: 24px;
+    }
+    .topNavigator{
+        bottom: 70px;
+    }
+    .btn-big{
+        width: 283px;
+        height: 60px;
+        font-size: 24px;
+    }
+} */

@@ -1,0 +1,443 @@
+
+/*************************************
+ 
+ 	1. MAIN STYLE
+    
+ 	2. HEADER
+	     
+	3. HERO
+	
+    4. SECTION STYLING
+    	
+    5. TIMELINE
+    
+    6. SERVICES
+    
+    7. CONTACT US
+    
+    8. TOOGLE BUTTON
+    
+    9. TABLET VIEW
+    
+    10. DESKTOP VIEW
+
+	
+ 
+ ************************************/
+
+
+
+/*************************************
+1. MAIN STYLE
+ ************************************/
+
+ /* RESET CSS */
+
+*,* ::before,* ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+h1,
+h2,
+h3,
+h4{
+	font-weight : normal;
+}
+
+footer,
+header,
+section {
+	display: block;
+}
+a{
+    text-decoration:none; 
+    color:inherit; 
+    cursor:pointer;
+}
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+button{
+    background-color:transparent; 
+    color:inherit; 
+    border-width:0; 
+    cursor:pointer;
+    outline: 0;
+    border: 0;
+}
+h1,h2{
+    letter-spacing: 1px;
+}
+h4,p{
+    letter-spacing: 0.5px;
+}
+h1{
+    font-size: 44px;
+}
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 25px;
+    line-height: 60px;
+}
+h4{
+    font-size: 20px;
+}
+
+:root{
+    --black: #141720;;
+    --secondary: #5d5f65;
+    --bgcolor:#141720;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.row::after,.clear-fix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* button */
+
+.btn{
+    padding: 14px 39px;
+    border-radius: 100px;
+    font-size: 15px;
+    letter-spacing: 0.19px;
+    line-height: 26px;
+}
+.btn_primary{
+    color: var(--white);
+    background-color: #c71222;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col_1 {width: 8.33%;}
+.col_2 {width: 16.66%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.33%;}
+.col_5 {width: 41.66%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.33%;}
+.col_8 {width: 66.66%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.33%;}
+.col_11 {width: 91.66%;}
+.col_12 {width: 100%;}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*************************************
+2. HEADER
+ ************************************/
+
+header h4{
+    margin-top: 31px;
+    margin-left: 80px;
+    float: left;
+    color: white;
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+header nav{
+    float: right;
+    margin-right: 80px;
+}
+.topnav li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    /* margin-top: 20px; */
+    padding: 7px;
+    color: var(--secondary);
+}
+
+.icon{display: none;}
+
+
+/*************************************
+3. HERO
+ ************************************/
+
+/* Hero-Section */
+.hero-section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1{color: #141720;}
+.hero-section h3{color: #5d5d5d;}
+
+/*************************************
+4. SECTION STYLING
+ ************************************/
+
+.section__content{
+    background-color: var(--bgcolor);
+    color: white;
+    padding: 100px 30px;
+    height: 516px;
+}
+.section__img{
+    height: 516px;
+    margin: 0;
+    padding: 0;
+}
+.section__img img{
+    object-fit: cover;
+}
+.section__content h2{
+    width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.section__content p{
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 26px;
+    overflow: hidden;
+    height: 234px;
+}
+
+/*************************************
+5. TIMELINE
+ ************************************/
+
+.timeline .section__content h2{color:#2b2b2b;}
+.timeline .section__content{
+    background-color: white;
+    color: #5d5f65;
+}
+
+.CustomImg{
+    position:relative;
+    width:270px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+/*************************************
+6. SERVICES
+ ************************************/
+
+.services{
+    padding: 30px 30px 10px 30px;
+    background-color: #efefef;
+}
+.services h2{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.services__wrapper__content h4{
+    margin: 20px 0 16px 0;
+    color: #141720;
+    width: 99%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.services__wrapper__content p{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    color: #5d5f65;
+    margin-bottom: 60px;
+    max-height: 105px;
+    overflow: hidden;
+}
+
+/*************************************
+7. CONTACT US
+ ************************************/
+
+.contact-us .section__content{height: 416px;
+padding: 0 30px;}
+.contact-us .section__content h2{
+    margin-bottom: 40px;
+}
+.contact-us__content-form input{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    margin-bottom: 25px;
+    color:white;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+.contact-us__content-form input{
+    width: 90%;
+}
+.contact-us__content-form textarea{
+    min-width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    color:white;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    min-height: 70px;
+    max-height: 100px;
+}
+input:focus,textarea:focus{
+    outline: 0;
+}
+input::placeholder,textarea::placeholder{
+    color:white;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+.form-with-button{
+    width: 90%;
+    min-height: 130px;
+    position: relative;
+    border-bottom: 2px solid white;
+}
+.form-button{
+    margin-bottom: 10px;
+}
+
+
+/*************************************
+8.   TOGGLE BUTTON 
+ ************************************/
+
+@media only screen and (max-width:978px){
+    header{
+        position: sticky;
+        top:0px;
+        height: 50px;
+        background-color: var(--bgcolor);
+        color: white;
+        z-index: 1;
+    }
+    header h4{margin-left: 10px;float: none;padding-top: 10px;margin-top: 0;}
+    header nav{float: none;width: 100%;}
+    header ul{display: none;margin: 0;}
+    .icon{
+        display: inline-block;
+        position: absolute;
+        top:13px;
+        right: 10px;
+    }
+    .responsive{
+        display: block;
+        background-color: var(--bgcolor);
+        padding-bottom: 20px;
+    }
+    .responsive li{
+        display: block;
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 15px;
+        color: white;
+    }
+}
+
+/*************************************
+9.    For Tablet 
+ ************************************/
+
+@media only screen and (min-width:768px){
+
+    [class*="col-"] {
+        float: left;
+        margin: 0;
+    }
+    .col-md_1 {width: 8.33%;}
+    .col-md_2 {width: 16.66%;}
+    .col-md_3 {width: 25%;}
+    .col-md_4 {width: 33.33%;}
+    .col-md_5 {width: 41.66%;}
+    .col-md_6 {width: 50%;}
+    .col-md_7 {width: 58.33%;}
+    .col-md_8 {width: 66.66%;}
+    .col-md_9 {width: 75%;}
+    .col-md_10 {width: 83.33%;}
+    .col-md_11 {width: 91.66%;}
+    .col-md_12 {width: 100%;}
+
+    .section__content{
+        padding: 100px 50px 50px 50px;
+    }
+    .timeline .section__content{
+        margin-bottom: 100px;
+    }
+    .services{
+        padding: 70px 60px 40px 75px;
+    }
+    .services__wrapper__content {
+        padding-right: 20px;
+    } 
+    .contact-us .section__content{height: 516px;padding: 100px 50px 50px 50px;}
+}
+
+/*************************************
+10.    For DESKTOP 
+ ************************************/
+
+@media only screen and (min-width:978px){
+
+    header h4{color: #141720;}
+    header nav{margin-top: 26px;}
+    .topnav li:hover{
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+    .section__content{
+        padding: 100px;
+    }
+    .contact-us .section__content{
+        padding: 100px 100px 60px 100px;
+    }
+    .timeline__content p{
+        margin-bottom: 200px;
+    }
+    .services{
+        padding: 140px 100px 80px 100px;
+    }
+    .services__wrapper__content {
+        padding-right: 20px;
+    }
+
+}
+
